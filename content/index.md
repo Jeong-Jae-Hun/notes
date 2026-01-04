@@ -23,7 +23,7 @@ tags:
 
 | 프로젝트 | 설명 |
 |---------|------|
-| [[PROJECT_CLAUDE-SETUP/README\|Claude 설정]] | Claude Code 커스터마이징 |
+| [[PROJECT_DEV-SETUP/README\|개발 환경 설정]] | dotfiles, Claude, OpenCode 설정 |
 | [[PROJECT_GAMEDEV/README\|게임 개발]] | C++ 게임 서버 학습 |
 | [[PROJECT_ENGLISH/README\|영어 학습]] | 영어 마스터리 프로젝트 |
 
