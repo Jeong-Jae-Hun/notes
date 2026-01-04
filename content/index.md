@@ -2,38 +2,14 @@
 title: 재훈의 공개 노트
 ---
 
-<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-<img src="https://avatars.githubusercontent.com/u/122011723?v=4" alt="Profile" style="width: 80px; height: 80px; border-radius: 50%;" />
-<div>
+# 재훈의 공개 노트
 
-# 👋 안녕하세요!
+공개된 노트 목록입니다.
 
-**정재훈**입니다.
-
-</div>
-</div>
-
-개발하면서 배운 것들을 정리하고 공유합니다.
-
-## 🚀 프로젝트
-
-| 프로젝트 | 설명 |
-|---------|------|
-| [[PROJECT_CLAUDE-SETUP/README\|Claude Setup]] | Claude Code 설정 및 워크플로우 |
-| [[PROJECT_GAMEDEV/README\|Game Dev]] | 게임 개발 학습 |
-| [[PROJECT_ENGLISH/README\|English]] | 영어 학습 |
-
-## 🔗 링크
-
-- [GitHub](https://github.com/Jeong-Jae-Hun)
-
----
-
-## 📚 자료
-
-개인적으로 공부하면서 정리한 내용들
-
-- [[RESOURCE_AI/AI-AGENT-MOC|AI 에이전트]]
-- [[RESOURCE_AI/AI-DEEPLEARNING-MOC|딥러닝]]
-- [[RESOURCE_개발도구/GIT-README|Git]]
-- [[RESOURCE_인프라/README|인프라]]
+- [[RESOURCE_AI/README|RESOURCE_AI]]
+- [[RESOURCE_개발도구/README|RESOURCE_개발도구]]
+- [[RESOURCE_언어/README|RESOURCE_언어]]
+- [[RESOURCE_인프라/README|RESOURCE_인프라]]
+- [[PROJECT_CLAUDE-SETUP/README|PROJECT_CLAUDE-SETUP]]
+- [[PROJECT_GAMEDEV/README|PROJECT_GAMEDEV]]
+- [[PROJECT_ENGLISH/README|PROJECT_ENGLISH]]

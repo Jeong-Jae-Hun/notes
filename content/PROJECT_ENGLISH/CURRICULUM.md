@@ -24,23 +24,26 @@ graph LR
 
 | 시간 | 활동 | 도구 |
 |------|------|------|
-| 출근길 10분 | 팝송 1곡 반복 청취 | Spotify/Apple Music |
-| 점심 10분 | 단어 20개 복습 | Anki/Quizlet |
-| 퇴근길 10분 | 같은 팝송 가사 보며 듣기 | Genius 앱 |
+| 출근길 10분 | 팝송 1곡 반복 청취 (가사 OFF) | Spotify |
+| 점심 10분 | 단어 20개 복습 | Anki |
+| 퇴근길 10분 | 같은 팝송 가사 보며 듣기 | Spotify 가사 기능 |
+
+> [!tip] Spotify 가사 보기
+> 재생 화면에서 아래로 스와이프 → 실시간 싱크 가사 표시
 
 ### 주간 목표
 - [ ] 토익 단어 140개/주 복습
 - [ ] 팝송 1곡 가사 암기
 - [ ] 주말: 30분 집중 리스닝
 
-### 시작 팝송 (Coldplay/Imagine Dragons)
-1. **Yellow** - Coldplay (느린 템포, 명확한 발음)
-2. **Fix You** - Coldplay (감성적, 반복 구간 많음)
-3. **Demons** - Imagine Dragons (스토리텔링)
-4. **Believer** - Imagine Dragons (강렬, 발음 연습)
+### 시작 팝송 (Joji / Billie Eilish / Lo-fi R&B)
+1. **Slow Dancing in the Dark** - Joji (대표곡, 느린 템포)
+2. **Glimpse of Us** - Joji (최신 히트, 감성적)
+3. **Sanctuary** - Joji (밝은 분위기)
+4. **ocean eyes** - Billie Eilish (명확한 발음)
 
 ### 체크포인트
-- [ ] 4주차: Yellow 가사 100% 청취
+- [ ] 4주차: Slow Dancing in the Dark 가사 100% 청취
 - [ ] 8주차: 팝송 2곡 따라 부르기 가능
 
 ---
@@ -57,13 +60,13 @@ graph LR
 | 점심 | 가사 확인 & 모르는 표현 정리 | Notion/메모 |
 | 퇴근길 | 섀도잉 (따라 말하기) | 이어폰 한쪽만 |
 
-### 추가 팝송 리스트
-5. **Viva La Vida** - Coldplay (역사적 표현)
-6. **Radioactive** - Imagine Dragons (강한 발음)
-7. **The Scientist** - Coldplay (감정 표현)
-8. **Thunder** - Imagine Dragons (리듬감)
-9. **Paradise** - Coldplay (스토리)
-10. **Whatever It Takes** - Imagine Dragons (동기부여)
+### 추가 팝송 리스트 (Joji / Lo-fi R&B)
+5. **when the party's over** - Billie Eilish (감정 표현)
+6. **Best Part** - Daniel Caesar ft. H.E.R. (듀엣, 명확한 발음)
+7. **comethru** - Jeremy Zucker (편안한 분위기)
+8. **I Like Me Better** - Lauv (팝 느낌)
+9. **Worldstar Money** - Joji (짧고 반복적)
+10. **Lovely** - Billie Eilish & Khalid (듀엣, 감성적)
 
 ### 학습 방법
 1. **1일차**: 가사 없이 3회 청취 (뭐라고 하는지 추측)
@@ -214,11 +217,14 @@ gantt
 
 | 용도 | 추천 |
 |------|------|
-| 단어 암기 | Anki, Quizlet |
-| 팝송 가사 | Genius, Musixmatch |
-| 팟캐스트 | Pocket Casts, Spotify |
+| 음악 + 가사 | **Spotify** (내장 실시간 가사) |
+| 단어 암기 | Anki |
+| 팟캐스트 | Spotify |
 | 스피킹 | Speak, ELSA |
 | 기록 | 옵시디언 (이 문서!) |
+
+> [!tip] Spotify 가사 기능
+> 재생 화면에서 아래로 스와이프 → 실시간 싱크 가사 표시
 
 ---
 
