@@ -18,6 +18,8 @@ tags:
 | [[RESOURCE_개발도구/README\|개발도구]] | 에디터, 터미널, Git 설정 |
 | [[RESOURCE_언어/README\|언어]] | TypeScript, Python, Lua 등 |
 | [[RESOURCE_인프라/README\|인프라]] | Docker, Linux, 홈서버 |
+| [[RESOURCE_참고/README\|참고]] | Zettelkasten 등 방법론 |
+| [[RESOURCE_학습/README\|학습]] | ADsP, 추천시스템 등 |
 
 ## 프로젝트
 
