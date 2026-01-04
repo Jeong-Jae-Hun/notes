@@ -154,6 +154,66 @@ compatibility:          # 선택
 - 단일 하이픈 구분자 허용
 - 정규식: `^[a-z0-9]+(-[a-z0-9]+)*$`
 
+## 에이전트별 모델 지정
+
+OpenCode의 강력한 기능 중 하나는 **에이전트별로 다른 모델을 지정**할 수 있다는 점입니다.
+
+### opencode.json 설정 예시
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5",
+
+  "agent": {
+    "code-reviewer": {
+      "description": "코드 리뷰 전문",
+      "model": "anthropic/claude-haiku-4-5",
+      "prompt": "You are a code reviewer...",
+      "tools": { "write": false, "edit": false }
+    },
+    "researcher": {
+      "description": "조사 전문 (무료 모델 사용)",
+      "model": "groq/llama-4-scout"
+    },
+    "debugger": {
+      "description": "디버깅 전문",
+      "model": "openai/gpt-4.1"
+    }
+  }
+}
+```
+
+### 모델 ID 형식
+
+```
+provider/model-id
+```
+
+| Provider | 예시 |
+|----------|------|
+| Anthropic | `anthropic/claude-sonnet-4-5` |
+| OpenAI | `openai/gpt-4.1` |
+| Groq (무료) | `groq/llama-4-scout` |
+| Google | `google/gemini-2.5-pro` |
+| OpenCode Zen | `opencode/gpt-5.1-codex` |
+
+### 기본 동작
+
+- **주 에이전트**: 전역 `model` 설정 사용
+- **서브에이전트**: 모델 미지정 시 → 호출한 주 에이전트의 모델 상속
+- **small_model**: 제목 생성 등 가벼운 작업용
+
+### 비용 최적화 전략
+
+| 용도 | 권장 모델 | 이유 |
+|------|----------|------|
+| 메인 코딩 | Claude Opus/Sonnet | 높은 정확도 |
+| 코드 리뷰 | Claude Haiku | 빠르고 저렴 |
+| 조사/검색 | Groq Llama (무료) | 비용 없음 |
+| 디버깅 | GPT-4.1 | 논리적 추론 |
+
 ## 마이그레이션 난이도
 
 | 난이도 | 항목 |
@@ -161,6 +221,9 @@ compatibility:          # 선택
 | **쉬움** | 스킬, MCP 서버 |
 | **중간** | 에이전트 (도구명 변환 필요) |
 | **어려움** | 훅, 커스텀 슬래시 커맨드 |
+
+> [!tip] 상세 가이드
+> 단계별 마이그레이션 방법은 [[AI-OPENCODE-MIGRATION|마이그레이션 가이드]] 참조
 
 ## 언제 OpenCode를 선택할까?
 
@@ -173,6 +236,8 @@ compatibility:          # 선택
 
 - [OpenCode 공식 사이트](https://opencode.ai)
 - [GitHub - sst/opencode](https://github.com/sst/opencode)
+- [OpenCode Config 문서](https://opencode.ai/docs/config/)
+- [OpenCode Agents 문서](https://opencode.ai/docs/agents/)
 - [OpenCode Skills 문서](https://opencode.ai/docs/skills/)
 - [Claude Code → OpenCode 마이그레이션 가이드](https://gist.github.com/RichardHightower/827c4b655f894a1dd2d14b15be6a33c0)
 
