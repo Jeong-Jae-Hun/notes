@@ -2,17 +2,29 @@
 title: 재훈의 공개 노트
 ---
 
-# 재훈의 공개 노트
+# 👋 안녕하세요!
 
-공개된 노트 목록입니다.
+백엔드 개발자 **정재훈**입니다. 개발하면서 배운 것들을 정리하고 공유합니다.
 
-## 자료
-- [[RESOURCE_AI/INDEX|AI]]
-- [[RESOURCE_개발도구/INDEX|개발도구]]
-- [[RESOURCE_언어/INDEX|프로그래밍 언어]]
-- [[RESOURCE_인프라/INDEX|인프라]]
+## 📚 자료
 
-## 프로젝트
-- [[PROJECT_CLAUDE-SETUP/README|Claude Setup]]
-- [[PROJECT_GAMEDEV/README|Game Dev]]
-- [[PROJECT_ENGLISH/README|English]]
+| 주제 | 설명 |
+|-----|------|
+| [[RESOURCE_AI/AI-AGENT-MOC\|AI 에이전트]] | AI 에이전트 개발 가이드 |
+| [[RESOURCE_AI/AI-DEEPLEARNING-MOC\|딥러닝]] | 딥러닝 핵심 개념 |
+| [[RESOURCE_AI/AI-CLAUDE-CODE-CHEATSHEET\|Claude Code]] | Claude Code 치트시트 |
+| [[RESOURCE_개발도구/GIT-README\|Git]] | Git 워크플로우 가이드 |
+| [[RESOURCE_개발도구/DEVOPS-TMUX-GUIDE\|Tmux]] | Tmux 설정 가이드 |
+| [[RESOURCE_인프라/README\|인프라]] | 홈랩 & 인프라 자료 |
+
+## 🚀 프로젝트
+
+| 프로젝트 | 설명 |
+|---------|------|
+| [[PROJECT_CLAUDE-SETUP/README\|Claude Setup]] | Claude Code 설정 및 워크플로우 |
+| [[PROJECT_GAMEDEV/README\|Game Dev]] | 게임 개발 학습 |
+| [[PROJECT_ENGLISH/README\|English]] | 영어 학습 |
+
+## 🔗 링크
+
+- [GitHub](https://github.com/Jeong-Jae-Hun)

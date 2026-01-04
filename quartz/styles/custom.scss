@@ -1,3 +1,21 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// D2Coding 폰트 추가
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff');
+
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 코드 블록에 D2Coding 적용
+code, pre, .highlight {
+  font-family: 'D2Coding', 'Fira Code', monospace !important;
+}
+
+// 링크 호버 효과
+a:hover {
+  text-decoration: underline;
+}
