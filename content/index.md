@@ -2,9 +2,18 @@
 title: 재훈의 공개 노트
 ---
 
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+<img src="https://avatars.githubusercontent.com/u/122011723?v=4" alt="Profile" style="width: 80px; height: 80px; border-radius: 50%;" />
+<div>
+
 # 👋 안녕하세요!
 
-백엔드 개발자 **정재훈**입니다. 개발하면서 배운 것들을 정리하고 공유합니다.
+**정재훈**입니다.
+
+</div>
+</div>
+
+개발하면서 배운 것들을 정리하고 공유합니다.
 
 ## 📚 자료
 

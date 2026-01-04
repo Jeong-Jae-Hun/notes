@@ -1,8 +1,6 @@
 @use "./base.scss";
 
-// D2Coding 폰트 추가
-@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff');
-
+// D2Coding 폰트
 @font-face {
   font-family: 'D2Coding';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
