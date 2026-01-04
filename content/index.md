@@ -19,7 +19,6 @@ tags:
 | [[RESOURCE_언어/README\|언어]] | TypeScript, Python, Lua 등 |
 | [[RESOURCE_인프라/README\|인프라]] | Docker, Linux, 홈서버 |
 | [[RESOURCE_참고/README\|참고]] | Zettelkasten 등 방법론 |
-| [[RESOURCE_학습/README\|학습]] | ADsP, 추천시스템 등 |
 
 ## 프로젝트
 
@@ -28,6 +27,14 @@ tags:
 | [[PROJECT_DEV-SETUP/README\|개발 환경 설정]] | dotfiles, Claude, OpenCode 설정 |
 | [[PROJECT_GAMEDEV/README\|게임 개발]] | C++ 게임 서버 학습 |
 | [[PROJECT_ENGLISH/README\|영어 학습]] | 영어 마스터리 프로젝트 |
+
+## 아카이브
+
+완료된 프로젝트 기록입니다.
+
+| 프로젝트 | 기간 | 결과 |
+|---------|------|------|
+| [[ARCHIVE_ADsP-2025/README\|ADsP 시험 준비]] | 2025-10 ~ 11 | 합격 |
 
 ## About
 
