@@ -15,17 +15,6 @@ title: 재훈의 공개 노트
 
 개발하면서 배운 것들을 정리하고 공유합니다.
 
-## 📚 자료
-
-| 주제 | 설명 |
-|-----|------|
-| [[RESOURCE_AI/AI-AGENT-MOC\|AI 에이전트]] | AI 에이전트 개발 가이드 |
-| [[RESOURCE_AI/AI-DEEPLEARNING-MOC\|딥러닝]] | 딥러닝 핵심 개념 |
-| [[RESOURCE_AI/AI-CLAUDE-CODE-CHEATSHEET\|Claude Code]] | Claude Code 치트시트 |
-| [[RESOURCE_개발도구/GIT-README\|Git]] | Git 워크플로우 가이드 |
-| [[RESOURCE_개발도구/DEVOPS-TMUX-GUIDE\|Tmux]] | Tmux 설정 가이드 |
-| [[RESOURCE_인프라/README\|인프라]] | 홈랩 & 인프라 자료 |
-
 ## 🚀 프로젝트
 
 | 프로젝트 | 설명 |
@@ -37,3 +26,14 @@ title: 재훈의 공개 노트
 ## 🔗 링크
 
 - [GitHub](https://github.com/Jeong-Jae-Hun)
+
+---
+
+## 📚 자료
+
+개인적으로 공부하면서 정리한 내용들
+
+- [[RESOURCE_AI/AI-AGENT-MOC|AI 에이전트]]
+- [[RESOURCE_AI/AI-DEEPLEARNING-MOC|딥러닝]]
+- [[RESOURCE_개발도구/GIT-README|Git]]
+- [[RESOURCE_인프라/README|인프라]]
