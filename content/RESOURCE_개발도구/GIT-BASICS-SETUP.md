@@ -1,3 +1,9 @@
+---
+tags:
+  - type/guide
+  - topic/git
+---
+
 # Git 초기 설정 및 저장소 생성
 
 ## 기본 설정

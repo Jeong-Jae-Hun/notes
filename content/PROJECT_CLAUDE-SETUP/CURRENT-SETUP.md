@@ -1,3 +1,10 @@
+---
+tags:
+  - type/reference
+  - topic/ai
+  - topic/devops
+---
+
 # Claude Code 현재 설정 현황
 
 > Last Updated: 2025-12-29

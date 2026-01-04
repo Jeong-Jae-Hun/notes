@@ -1,3 +1,10 @@
+---
+tags:
+  - type/cheatsheet
+  - topic/ai
+  - topic/llm
+---
+
 # Claude Code 치트시트
 
 > Claude Code 생산성을 높이는 24가지 꿀팁 정리

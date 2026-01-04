@@ -1,3 +1,9 @@
+---
+tags:
+  - type/moc
+  - topic/ai
+---
+
 # Deep Learning MOC
 
 > 딥러닝 핵심 개념과 알고리즘 맵

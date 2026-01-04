@@ -1,3 +1,9 @@
+---
+tags:
+  - type/overview
+  - topic/ai
+---
+
 # AI 에이전트 개요 (2025)
 
 > 작성일: 2025-12-22

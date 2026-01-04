@@ -1,3 +1,11 @@
+---
+tags:
+  - type/guide
+  - topic/ai
+  - topic/llm
+  - topic/infra
+---
+
 # 로컬 LLM 올인원 세팅 가이드
 
 > 작성일: 2025-12-15

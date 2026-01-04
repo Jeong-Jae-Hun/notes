@@ -1,3 +1,9 @@
+---
+tags:
+  - type/guide
+  - topic/devops
+---
+
 # tmux 가이드 - 터미널 멀티플렉서
 
 > 작성일: 2025-12-22

@@ -1,3 +1,10 @@
+---
+tags:
+  - type/cheatsheet
+  - topic/docker
+  - topic/devops
+---
+
 # Colima Cheat Sheet
 
 ## Colima란?

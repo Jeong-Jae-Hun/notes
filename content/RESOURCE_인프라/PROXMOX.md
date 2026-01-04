@@ -1,3 +1,9 @@
+---
+tags:
+  - type/reference
+  - topic/infra
+---
+
 # Proxmox VE
 
 > 홈랩/홈서버를 위한 오픈소스 가상화 플랫폼

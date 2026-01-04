@@ -1,3 +1,9 @@
+---
+tags:
+  - type/guide
+  - topic/devops
+---
+
 # Ghostty 터미널 설정 가이드 (한국인 개발자용)
 
 > 작성일: 2025-12-22

@@ -17,6 +17,10 @@ Claude Code 스킬, 커맨드, 훅, MCP 등 설정을 체계적으로 개선하�
 - `~/.dotfiles/claude/` - 설정 원본
 - `~/.claude/` - 심볼링크
 
+## 템플릿
+
+- [claude-workflow-template](https://github.com/Jeong-Jae-Hun/claude-workflow-template) - Claude Code 워크플로우 템플릿
+
 ## 태그
 
 #project/claude-setup #topic/productivity

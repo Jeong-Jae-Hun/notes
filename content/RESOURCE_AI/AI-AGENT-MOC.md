@@ -1,3 +1,9 @@
+---
+tags:
+  - type/moc
+  - topic/ai
+---
+
 # AI Agent MOC
 
 > Map of Content for AI Agent ecosystem (2025)
