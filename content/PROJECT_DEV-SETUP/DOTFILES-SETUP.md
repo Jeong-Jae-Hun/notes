@@ -11,9 +11,13 @@ dotfiles로 관리하는 설정:
 | Shell | zsh | PowerShell 7 |
 | Git | .gitconfig | .gitconfig |
 | SSH | ssh/config | ssh/config |
-| 터미널 | Ghostty | Windows Terminal |
+| 터미널 | Ghostty | **WezTerm** (권장) / Windows Terminal |
 | Claude Code | claude/ | claude/ |
 | OpenCode | opencode/ | opencode/ |
+
+> [!tip] Windows 터미널 추천
+> **WezTerm**: Ghostty와 유사한 GPU 가속 터미널. Lua 설정, 네이티브 탭/분할, 리가처 지원.
+> Windows Terminal보다 커스터마이징이 자유롭고 크로스플랫폼 설정 공유 가능.
 
 ## 저장소 구조
 
@@ -25,7 +29,9 @@ dotfiles로 관리하는 설정:
 ├── .gitconfig                  # Git 전역 설정
 ├── config/
 │   ├── ghostty/                # Ghostty 터미널 (macOS)
-│   └── windows-terminal/       # Windows Terminal (Windows)
+│   ├── wezterm/                # WezTerm (Windows 권장, 크로스플랫폼)
+│   │   └── wezterm.lua
+│   └── windows-terminal/       # Windows Terminal (대안)
 ├── ssh/
 │   └── config                  # SSH 호스트 설정
 ├── claude/                     # Claude Code 설정
@@ -112,7 +118,12 @@ chmod +x link.sh
    winget install Git.Git
    ```
 
-4. **Windows Terminal 설치** (권장)
+4. **WezTerm 설치** (권장 - Ghostty 대안)
+   ```powershell
+   winget install wez.wezterm
+   ```
+
+5. **Windows Terminal 설치** (대안)
    ```powershell
    winget install Microsoft.WindowsTerminal
    ```
@@ -187,6 +198,7 @@ cd $env:USERPROFILE\.dotfiles
 | `.dotfiles\.gitconfig` | `%USERPROFILE%\.gitconfig` |
 | `.dotfiles\ssh\config` | `%USERPROFILE%\.ssh\config` |
 | `.dotfiles\powershell\profile.ps1` | `$PROFILE` |
+| `.dotfiles\config\wezterm\wezterm.lua` | `%USERPROFILE%\.wezterm.lua` |
 | `.dotfiles\claude\` | `%USERPROFILE%\.claude\` |
 | `.dotfiles\opencode\.opencode.json` | `%USERPROFILE%\.opencode.json` |
 | `.dotfiles\opencode\` | `%APPDATA%\opencode\` |
@@ -206,7 +218,7 @@ Write-Host "`n[1/4] 필수 도구 확인" -ForegroundColor Yellow
 $tools = @(
     @{ Name = "Git"; WingetId = "Git.Git" },
     @{ Name = "PowerShell 7"; WingetId = "Microsoft.PowerShell" },
-    @{ Name = "Windows Terminal"; WingetId = "Microsoft.WindowsTerminal" },
+    @{ Name = "WezTerm"; WingetId = "wez.wezterm" },
     @{ Name = "Visual Studio Code"; WingetId = "Microsoft.VisualStudioCode" }
 )
 
@@ -333,6 +345,10 @@ if (-not (Test-Path $profileDir)) {
     New-Item -ItemType Directory -Path $profileDir -Force | Out-Null
 }
 New-SafeLink -Source "$DotfilesDir\powershell\profile.ps1" -Target $PROFILE -Name "profile.ps1"
+
+# WezTerm
+Write-Host "`n[WezTerm]" -ForegroundColor Yellow
+New-SafeLink -Source "$DotfilesDir\config\wezterm\wezterm.lua" -Target "$env:USERPROFILE\.wezterm.lua" -Name ".wezterm.lua"
 
 # Claude Code
 Write-Host "`n[Claude Code]" -ForegroundColor Yellow
@@ -660,6 +676,153 @@ Write-Host ""
 | `pushall` | ✅ | ✅ | 전체 푸시 |
 | `syncall` | ✅ | ✅ | 전체 동기화 |
 | `dotbrew` | ✅ | - | Brewfile 업데이트 |
+
+---
+
+## WezTerm 설정
+
+> [!info] Ghostty 대안
+> WezTerm은 Windows에서 Ghostty와 가장 유사한 사용성을 제공하는 GPU 가속 터미널.
+> Lua로 설정하며, 크로스플랫폼 지원으로 macOS/Linux에서도 동일 설정 사용 가능.
+
+### 설정 파일 경로
+
+| 플랫폼 | 경로 |
+|--------|------|
+| Windows | `%USERPROFILE%\.wezterm.lua` |
+| macOS | `~/.wezterm.lua` |
+| Linux | `~/.wezterm.lua` |
+
+### 기본 설정 템플릿
+
+`config/wezterm/wezterm.lua`:
+
+```lua
+-- WezTerm Configuration
+-- Ghostty 스타일 미니멀 설정
+
+local wezterm = require 'wezterm'
+local config = wezterm.config_builder()
+
+-- ============================================
+-- 외관
+-- ============================================
+
+-- 폰트 설정 (Ghostty 기본과 유사)
+config.font = wezterm.font('JetBrains Mono', { weight = 'Medium' })
+config.font_size = 14.0
+
+-- 리가처 활성화
+config.harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' }
+
+-- 컬러 스킴
+config.color_scheme = 'Catppuccin Mocha'  -- 또는 'Tokyo Night', 'Dracula'
+
+-- 창 설정
+config.window_decorations = 'RESIZE'  -- 타이틀바 숨김, 리사이즈만
+config.window_padding = {
+    left = 10,
+    right = 10,
+    top = 10,
+    bottom = 10,
+}
+
+-- 투명도 (선택)
+-- config.window_background_opacity = 0.95
+
+-- ============================================
+-- 동작
+-- ============================================
+
+-- 탭바
+config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = true
+config.hide_tab_bar_if_only_one_tab = true
+
+-- 스크롤백
+config.scrollback_lines = 10000
+
+-- 커서
+config.default_cursor_style = 'BlinkingBlock'
+config.cursor_blink_rate = 500
+
+-- ============================================
+-- 키바인딩
+-- ============================================
+
+config.keys = {
+    -- 탭
+    { key = 't', mods = 'CTRL|SHIFT', action = wezterm.action.SpawnTab 'CurrentPaneDomain' },
+    { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentTab { confirm = true } },
+
+    -- 분할
+    { key = 'd', mods = 'CTRL|SHIFT', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+    { key = 'e', mods = 'CTRL|SHIFT', action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
+
+    -- 패널 이동
+    { key = 'LeftArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Left' },
+    { key = 'RightArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Right' },
+    { key = 'UpArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Up' },
+    { key = 'DownArrow', mods = 'CTRL|SHIFT', action = wezterm.action.ActivatePaneDirection 'Down' },
+
+    -- 폰트 크기
+    { key = '=', mods = 'CTRL', action = wezterm.action.IncreaseFontSize },
+    { key = '-', mods = 'CTRL', action = wezterm.action.DecreaseFontSize },
+    { key = '0', mods = 'CTRL', action = wezterm.action.ResetFontSize },
+
+    -- 설정 리로드
+    { key = 'r', mods = 'CTRL|SHIFT', action = wezterm.action.ReloadConfiguration },
+}
+
+-- ============================================
+-- 플랫폼별 설정
+-- ============================================
+
+-- Windows: PowerShell 7 기본 쉘
+if wezterm.target_triple:find('windows') then
+    config.default_prog = { 'pwsh.exe', '-NoLogo' }
+end
+
+-- macOS: zsh 기본 쉘
+if wezterm.target_triple:find('darwin') then
+    config.default_prog = { '/bin/zsh', '-l' }
+end
+
+return config
+```
+
+### 주요 키바인딩
+
+| 키 | 동작 |
+|----|------|
+| `Ctrl+Shift+T` | 새 탭 |
+| `Ctrl+Shift+W` | 탭 닫기 |
+| `Ctrl+Shift+D` | 수평 분할 |
+| `Ctrl+Shift+E` | 수직 분할 |
+| `Ctrl+Shift+Arrow` | 패널 이동 |
+| `Ctrl+Shift+R` | 설정 리로드 |
+
+### 추천 폰트
+
+```lua
+-- 리가처 지원 폰트 (우선순위)
+config.font = wezterm.font_with_fallback {
+    'JetBrains Mono',
+    'Fira Code',
+    'Cascadia Code',
+    'D2Coding',  -- 한글
+}
+```
+
+### 추천 컬러 스킴
+
+```lua
+-- 내장 스킴 목록: wezterm.get_builtin_color_schemes()
+config.color_scheme = 'Catppuccin Mocha'   -- 다크, 부드러운 색상
+-- config.color_scheme = 'Tokyo Night'     -- 다크, 보라 계열
+-- config.color_scheme = 'Dracula'         -- 다크, 클래식
+-- config.color_scheme = 'Solarized Dark'  -- 다크, 눈 편한
+```
 
 ---
 
