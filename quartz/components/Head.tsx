@@ -66,6 +66,8 @@ export default (() => {
           <>
             <meta property="og:image" content={ogImageDefaultPath} />
             <meta property="og:image:url" content={ogImageDefaultPath} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="675" />
             <meta name="twitter:image" content={ogImageDefaultPath} />
             <meta
               property="og:image:type"
@@ -82,7 +84,9 @@ export default (() => {
           </>
         )}
 
-        <link rel="icon" href={iconPath} />
+        <link rel="icon" type="image/x-icon" href={joinSegments(baseDir, "static/favicon.ico")} />
+        <link rel="icon" type="image/png" href={iconPath} />
+        <link rel="apple-touch-icon" href={iconPath} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
