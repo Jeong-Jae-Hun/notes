@@ -304,7 +304,8 @@ export GITHUB_TOKEN="ghp_xxx"
 
 - [GitHub: dotfiles](https://dotfiles.github.io/) - 다양한 dotfiles 예시
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - Brewfile 문서
+- [[개인/PROJECT_DEV-SETUP/DOTFILES-SETUP|DEV-SETUP/DOTFILES]] - 내 dotfiles 설정 (macOS + Windows)
 
 ---
 
-*마지막 업데이트: 2025-12-23*
+*마지막 업데이트: 2026-01-04*
