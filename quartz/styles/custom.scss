@@ -17,3 +17,8 @@ code, pre, .highlight {
 a:hover {
   text-decoration: underline;
 }
+
+// bold 텍스트 선명하게
+h1, h2, h3, h4, h5, h6, strong, b {
+  text-shadow: 0.5px 0 0 currentColor;
+}

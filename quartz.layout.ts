@@ -37,23 +37,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
-  ],
-  right: [
-    Component.Graph({
-      localGraph: {
-        depth: 2,
-        focusOnHover: true,
-        repelForce: 0.4,
-        linkDistance: 35,
-      },
-      globalGraph: {
-        depth: -1,
-        focusOnHover: true,
-        enableRadial: true,
-      },
+    Component.Explorer({
+      folderDefaultState: "open",
     }),
     Component.DesktopOnly(Component.TableOfContents()),
+  ],
+  right: [
     Component.Backlinks(),
   ],
 }
@@ -73,7 +62,9 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "open",
+    }),
   ],
   right: [],
 }
