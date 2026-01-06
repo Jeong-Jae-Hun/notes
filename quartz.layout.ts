@@ -40,9 +40,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer({
       folderDefaultState: "open",
     }),
-    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
 }
