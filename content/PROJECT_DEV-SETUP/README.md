@@ -99,8 +99,16 @@ opencode
 ## 참고 링크
 
 - [dotfiles 레포](https://github.com/Jeong-Jae-Hun/dotfiles)
-- [claude-workflow-template](https://github.com/Jeong-Jae-Hun/claude-workflow-template)
 - [OpenCode 공식](https://opencode.ai)
+
+## 템플릿 레포
+
+새 환경 설정 시 사용할 수 있는 템플릿:
+
+| 템플릿 | 용도 |
+|--------|------|
+| [dev-setup-template](https://github.com/Jeong-Jae-Hun/dev-setup-template) | dotfiles + Claude + OpenCode |
+| [note-template](https://github.com/Jeong-Jae-Hun/note-template) | Obsidian PARA + 컨텍스트 시스템 |
 
 ---
 
