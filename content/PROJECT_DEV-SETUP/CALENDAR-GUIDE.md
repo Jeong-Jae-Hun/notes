@@ -237,15 +237,15 @@ chmod +x ~/.dotfiles/claude/scripts/cal.sh
 ```
 /cal from-todo
 
-→ 업무 TODO:
-  - MCO-APIGW PR #10 머지
-  - MAUTH 기획 문서 작성
-  - CI-ME X-Auth-Expired 처리
+→ 오늘 TODO:
+  - PR 코드 리뷰
+  - API 문서 작성
+  - 버그 수정 (로그인 이슈)
 
 → 제안 스케줄:
-  13:00-13:30 MCO-APIGW PR #10 머지
-  13:30-15:30 MAUTH 기획 문서 작성
-  15:30-17:30 CI-ME X-Auth-Expired 처리
+  13:00-13:30 PR 코드 리뷰
+  13:30-15:30 API 문서 작성
+  15:30-17:30 버그 수정 (로그인 이슈)
 
 → 이대로 등록할까요?
 ```

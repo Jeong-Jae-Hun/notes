@@ -229,7 +229,7 @@ post-commit-reminder.sh
 
 ```json
 {
-  "contextPath": "업무/PROJECT_CI-ME",
+  "contextPath": "개인/PROJECT_MY-APP",
   "defaultBranch": "develop"
 }
 ```
