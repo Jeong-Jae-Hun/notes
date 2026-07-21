@@ -3,13 +3,13 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "재훈의 공개 노트",
+    pageTitle: "개발 노트",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
     locale: "ko-KR",
-    baseUrl: "Jeong-Jae-Hun.github.io/notes",
+    baseUrl: "blog.dotdotslash.me",
     ignorePatterns: ["private", "_CONTEXT.md", "*.local.*"],
     defaultDateType: "modified",
     theme: {
